@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MyReactNativeApp - App Link Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; }
+        .link-section { margin: 30px 0; padding: 20px; background: #f5f5f5; border-radius: 8px; }
+        a { display: block; margin: 10px 0; padding: 10px; background: #007acc; color: white; text-decoration: none; border-radius: 4px; }
+        a:hover { background: #005fa3; }
+        .custom-scheme { background: #28a745; }
+        .custom-scheme:hover { background: #1e7e34; }
+    </style>
+</head>
+<body>
+    <h1>MyReactNativeApp - App Link Testing</h1>
+    <p>This page is hosted on GitHub Pages to test Android App Links.</p>
+    
+    <div class="link-section">
+        <h2>Custom Scheme Links (Working Now):</h2>
+        <p>These links will open directly in your app:</p>
+        <a href="myapp://home" class="custom-scheme">Open App Home</a>
+        <a href="myapp://profile/user123" class="custom-scheme">Open User Profile</a>
+        <a href="myapp://products/456?category=electronics" class="custom-scheme">Open Product with Parameters</a>
+    </div>
+    
+    <div class="link-section">
+        <h2>HTTPS Links (Will work after domain verification):</h2>
+        <p>These links will work once domain verification is complete:</p>
+        <a href="https://tiny76767.github.io/myapp-verification/home">Open App Home (HTTPS)</a>
+        <a href="https://tiny76767.github.io/myapp-verification/profile/user123">Open User Profile (HTTPS)</a>
+        <a href="https://tiny76767.github.io/myapp-verification/products/456?category=electronics">Open Product (HTTPS)</a>
+    </div>
+    
+    <div class="link-section">
+        <h2>Domain Verification:</h2>
+        <p>The Digital Asset Links file is available at:</p>
+        <a href="/.well-known/assetlinks.json">View assetlinks.json</a>
+    </div>
+    
+    <div class="link-section">
+        <h2>Instructions:</h2>
+        <ol>
+            <li>Upload these files to your GitHub repository</li>
+            <li>Enable GitHub Pages in repository settings</li>
+            <li>Update your AndroidManifest.xml with your GitHub Pages URL</li>
+            <li>Test the links on an Android device with your app installed</li>
+        </ol>
+    </div>
+</body>
+</html>
